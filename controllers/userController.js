@@ -3,6 +3,7 @@ const User = require('../models/userModel')
 // I am using this package to avoid try and catch in my function
 const asyncHandler = require('express-async-handler')
  
+ 
 const findUserLocation = asyncHandler(async (req, res) => {
 
     const { latitude, longitude } = req.body;
@@ -31,7 +32,7 @@ const findUserLocationById = asyncHandler(async (req, res) => {
     if (userLocation) {
         return res.status(201).json(userLocation)
     } else {
-        return res.status(404).json(`User with ${req.params.id} not found`)
+        return res.status(404).json(`User with id ${req.params.id} does not found`)
     }
 })
 
