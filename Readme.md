@@ -24,5 +24,5 @@ GET data from DB (locationByUserId)
    localhost:5000/api/location/id
 ```
 
-## Please remember to add POSTGIS Extension in PostgreSQL in order to store the coordinates in DB   
+Please remember to add Postgis Extension in PostgreSQL in order to store the coordinates in DB   
 
